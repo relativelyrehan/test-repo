@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+.navbar{
+  padding: .8rem;
+}
+
+.navbar-nav li{
+  padding-right: 20px;
+}
+
+.nav-link{
+  font-size: 1.1rem;
+}
+
+.carousel-inner img{
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.carousel-caption h1{
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 10px #000;
+}
+
+.carousel-caption h3{
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+
+.carousel-caption .btn{
+  border: 1px solid #a8df65;
+  width: 10rem;
+  height: 3rem;
+  margin: 10px;
+}
+
+
+
+.jumbotron{
+  padding: 1rem;
+  border-radius: 0;
+  background-color: #a8df65;
+  width: 75%;
+  margin: 1rem auto;
+}
+
+.padding{
+  padding-bottom: 2rem;
+}
+
+.welcome{
+  width: 75%;
+  height: 40rem;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+
+.welcome h1{
+  color: #110133;
+  margin-top: 5%;
+  text-transform: uppercase;
+}
+
+
+.welcome img{
+  border: 1px solid #110133;
+  height: 175px;
+  width: 350px;
+  margin-bottom: 1rem;
+
+}
+
+.hidden-img-one, .hidden-img-two{
+  margin-top: .5rem;
+  margin-bottom: 0rem;
+}
+
+.hr-rule{
+  width: 90%;
+  border-top: 1px solid #110133;
+}
+
+.icon-card {
+  background-color: #edf492a4;
+  padding: 2rem;
+}
+
+.icon{
+  color: #a8df65;
+  font-size: 3.5rem;
+  margin: 1rem;
+}
+
+.about{
+  width: 80%;
+  margin: auto;
+}
+
+.about img{
+  border: 1px solid #110133;
+  height: 350px;
+  width: 500px;
+}
+
+.about h1{
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.about li{
+  list-style: none;
+}
+
+.info-top{
+  text-align: right;
+}
+
+.info-bottom{
+  text-align: left;
+}
+
+footer{
+  background-color: #594a4e;
+  color: #f5dea3;
+}
+
+.light{
+    border-top: 1px solid #f5dea3;
+    margin: .8rem 0;
+}
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .display-4 {
+    font-size: 200%;
+  }
+
+  .welcome img{
+    height: 140px;
+    width: 280px;
+  }
+
+  .hidden-img-one{
+    height: 140px;
+    width: 280px;
+  }
+
+  .hidden-img-two{
+    display: none;
+  }
+  }
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 45%;
+  }
+
+  .carousel-caption h1 {
+    margin-top: 0;
+    font-size: 350%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000;
+  }
+
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 400;
+    text-shadow: 1px 1px 10px #000;
+    padding-bottom: .2rem;
+  }
+
+  .carousel-caption .btn{
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+
+  .display-4{
+    font-size: 200%;
+  }
+
+  .icon-card {
+    background-color: #edf492a4;
+    padding: 1rem;
+  }
+
+  .icon {
+    color: #a8df65;
+    font-size: 2.5rem;
+    margin: .7rem;
+  }
+
+  .welcome img{
+    margin-bottom: .5rem;
+  }
+
+  .hidden-img-one, .hidden-img-two{
+    display: none;
+  }
+  .about img {
+    height: 250px;
+    width: 400px;
+  }
+}
+@media (max-width: 576px) {
+
+  .about img {
+    height: 250px;
+    width: 350px;
+  }
+
+  .hidden-img-one,
+  .hidden-img-two {
+    display: none;
+  }
+
+  .welcome img{
+    height: 220px;
+  }
+
+
+  .carousel-caption {
+    top: 40%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 250%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000;
+  }
+
+  .carousel-caption h3 {
+    font-size: 110%;
+    font-weight: 400;
+    text-shadow: 1px 1px 10px #000;
+    padding-bottom: .2rem;
+  }
+
+  .carousel-caption .btn {
+    font-size: 90%;
+    width: 7rem;
+    height: 2rem;
+    padding: 4px 8px;
+  }
+
+  .carousel-indicators{
+    display: none;
+  }
+}
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
